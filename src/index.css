@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+  background: #0a0a0a;
+  color: #f3f6f6;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow: none;
+  cursor: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (pointer: coarse) {
+  .custom-cursor {
+    display: none;
+  }
+}
+
+@layer utilities {
+
+  @keyframes blink {
+    0%, 100%{
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .animate-blink {
+    animation: blink 0.8s step-end infinite;
+  }
+
+  @keyframes loading {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(250%);
+    }
+  }
+
+  .animate-loading-bar {
+    animation: loading 0.8s ease infinite;
+  }
+}
+
+@layer utilities {
+  @keyframes flash {
+    0%, 100% {
+      opacity: 1;
+      box-shadow: 0 0 0px rgba(59, 130, 246, 0.4);
+    }
+    50% {
+      opacity: 0.6;
+      box-shadow: 0 0 12px rgba(59, 130, 246, 0.8);
+    }
+  }
+
+  .animate-flash {
+    animation: flash 1.2s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  @keyframes rgbFlash {
+    0% { border-color: rgb(255, 0, 0); box-shadow: 0 0 10px rgb(255, 0, 0); }
+    25% { border-color: rgb(0, 255, 0); box-shadow: 0 0 10px rgb(0, 255, 0); }
+    50% { border-color: rgb(0, 0, 255); box-shadow: 0 0 10px rgb(0, 0, 255); }
+    75% { border-color: rgb(255, 255, 0); box-shadow: 0 0 10px rgb(255, 255, 0); }
+    100% { border-color: rgb(255, 0, 255); box-shadow: 0 0 10px rgb(255, 0, 255); }
+  }
+
+  .animate-rgb-flash {
+    animation: rgbFlash 0.8s linear infinite;
+  }
+}
