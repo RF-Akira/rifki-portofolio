@@ -29,7 +29,7 @@ export const About = () => {
         <div className="rounded-xl p-8 border-white/10 hover:-translate-y-1 transition-all">
           <div className="flex flex-col md:flex-row-reverse items-center gap-6">
             <img
-              src="/public/profil.jpeg"
+              src="/profil.jpeg"
               alt="Profile"
               className="w-160 h-40 object-cover rounded-xl border-2 border-white/20"
             />

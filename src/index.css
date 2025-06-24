@@ -81,3 +81,7 @@ html, body {
     animation: rgbFlash 0.8s linear infinite;
   }
 }
+
+@media (max-width: 768px) {
+  
+}

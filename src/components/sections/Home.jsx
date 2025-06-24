@@ -10,12 +10,9 @@ export const Home = () => {
         </h1>
 
         <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
-          <p>
-            <p>
               Mahasiswa Informatika dengan minat di bidang web development dan
               desain antarmuka.
-            </p>
-          </p>
+
         </p>
 
         <div className="flex flex-col space-y-4">
