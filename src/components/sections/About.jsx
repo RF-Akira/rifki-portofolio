@@ -1,5 +1,6 @@
 import { FaReact, FaVuejs, FaNodeJs, FaAws } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss, SiMongodb, SiPython } from "react-icons/si";
+import GambarProfil from '../../assets/profil.jpeg'; // 
 
 export const About = () => {
   const frontendSkills = [
@@ -29,7 +30,7 @@ export const About = () => {
         <div className="rounded-xl p-8 border-white/10 hover:-translate-y-1 transition-all">
           <div className="flex flex-col md:flex-row-reverse items-center gap-6">
             <img
-              src="/profil.jpeg"
+              src={GambarProfil}
               alt="Profile"
               className="w-160 h-40 object-cover rounded-xl border-2 border-white/20"
             />
