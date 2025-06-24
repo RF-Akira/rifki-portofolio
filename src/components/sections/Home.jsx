@@ -12,7 +12,6 @@ export const Home = () => {
         <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
               Mahasiswa Informatika dengan minat di bidang web development dan
               desain antarmuka.
-
         </p>
 
         <div className="flex flex-col space-y-4">
