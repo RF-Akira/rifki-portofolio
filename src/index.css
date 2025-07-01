@@ -85,3 +85,52 @@ html, body {
 @media (max-width: 768px) {
   
 }
+
+@layer utilities {
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.2), 0 0 30px rgba(59, 130, 246, 0.1);
+    }
+    50% {
+      box-shadow: 0 0 35px rgba(59, 130, 246, 0.4), 0 0 45px rgba(59, 130, 246, 0.3);
+    }
+  }
+
+  .animate-true-focus {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  .gooey-container {
+    filter: url('#gooey');
+  }
+  
+  
+  .svg-gooey-filter {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    width: 0;
+    height: 0;
+  }
+}
+
+@layer utilities {
+  @keyframes hue-cycle {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+
+  .animate-rgb-hue {
+    animation: hue-cycle 5s linear infinite;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp} from "react-icons/fa";
 
 export const Contact = () => {
   const form = useRef();
@@ -93,6 +93,14 @@ export const Contact = () => {
               className="hover:text-pink-500 transition"
             >
               <FaInstagram />
+            </a>
+            <a
+              href="https://wa.me/6285379006225"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-pink-500 transition"
+            >
+              <FaWhatsapp />
             </a>
           </div>
         </div>
