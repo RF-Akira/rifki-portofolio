@@ -50,13 +50,13 @@ export const About = () => {
   const experienceData = [
     {
       company: "PT. Media Antar Nusa",
-      role: "IT Engginer Intern",
+      role: "IT Engginer | Vocational Training",
       period: "Jul 2022 - Sep 2022",
       description: [],
     },
     {
       company: "Horison Sky Kualanamu",
-      role: "IT Support Intern",
+      role: "IT Support | Vocational Training",
       period: "Jan 2022 - Mar 2022",
       description: [],
     },
